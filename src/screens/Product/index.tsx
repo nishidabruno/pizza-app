@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Platform } from 'react-native';
-import { BorderlessButton } from 'react-native-gesture-handler';
+import { BorderlessButton, ScrollView } from 'react-native-gesture-handler';
 import * as ImagePicker from 'expo-image-picker';
 
 import { ButtonBack } from '@components/ButtonBack';
@@ -12,9 +12,16 @@ import {
   Title,
   DeleteLabel,
   Upload,
-  PickImageButton
+  PickImageButton,
+  Form,
+  InputGroup,
+  Label,
+  MaxCharacters,
+  InputGroupHeader
 } from './styles';
 import { InputPrice } from '@components/InputPrice';
+import { Input } from '@components/Input';
+import { Button } from '@components/Button';
 
 export function Product() {
   const [image, setImage] = useState('');
@@ -36,27 +43,54 @@ export function Product() {
 
   return (
     <Container behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
-      <Header>
-        <ButtonBack />
-        <Title>Register</Title>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <Header>
+          <ButtonBack />
+          <Title>Register</Title>
 
-        <BorderlessButton>
-          <DeleteLabel>Delete</DeleteLabel>
-        </BorderlessButton>
-      </Header>
+          <BorderlessButton>
+            <DeleteLabel>Delete</DeleteLabel>
+          </BorderlessButton>
+        </Header>
 
-      <Upload>
-        <Photo uri={image} />
-        <PickImageButton
-          title="Load"
-          type="secondary"
-          onPress={handleImagePicker}
-        />
-      </Upload>
+        <Upload>
+          <Photo uri={image} />
+          <PickImageButton
+            title="Load"
+            type="secondary"
+            onPress={handleImagePicker}
+          />
+        </Upload>
 
-      <InputPrice size="S" />
-      <InputPrice size="M" />
-      <InputPrice size="L" />
+        <Form>
+          <InputGroup>
+            <Label>Name</Label>
+            <Input />
+          </InputGroup>
+
+          <InputGroup>
+            <InputGroupHeader>
+              <Label>Description</Label>
+              <MaxCharacters>0 of 60 characters</MaxCharacters>
+            </InputGroupHeader>
+            <Input
+              multiline
+              maxLength={60}
+              style={{ height: 80 }}
+            />
+          </InputGroup>
+
+          <InputGroup>
+            <Label>Sizes and prices</Label>
+
+            <InputPrice size="S" />
+            <InputPrice size="M" />
+            <InputPrice size="L" />
+          </InputGroup>
+
+          <Button title="Register pizza" />
+        </Form>
+      </ScrollView>
     </Container>
   );
 }
