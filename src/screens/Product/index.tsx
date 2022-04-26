@@ -14,6 +14,7 @@ import {
   Upload,
   PickImageButton
 } from './styles';
+import { InputPrice } from '@components/InputPrice';
 
 export function Product() {
   const [image, setImage] = useState('');
@@ -52,6 +53,10 @@ export function Product() {
           onPress={handleImagePicker}
         />
       </Upload>
+
+      <InputPrice size="S" />
+      <InputPrice size="M" />
+      <InputPrice size="L" />
     </Container>
   );
 }
