@@ -6,7 +6,7 @@ import { useTheme } from 'styled-components/native';
 
 import { Container } from './styles';
 
-export function BackButton({ ...rest }: BorderlessButtonProps) {
+export function ButtonBack({ ...rest }: BorderlessButtonProps) {
   const { COLORS } = useTheme();
 
   return (

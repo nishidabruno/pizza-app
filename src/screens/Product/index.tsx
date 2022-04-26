@@ -3,7 +3,7 @@ import { Platform } from 'react-native';
 import { BorderlessButton } from 'react-native-gesture-handler';
 import * as ImagePicker from 'expo-image-picker';
 
-import { BackButton } from '@components/BackButton';
+import { ButtonBack } from '@components/ButtonBack';
 import { Photo } from '@components/Photo';
 
 import {
@@ -36,7 +36,7 @@ export function Product() {
   return (
     <Container behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
       <Header>
-        <BackButton />
+        <ButtonBack />
         <Title>Register</Title>
 
         <BorderlessButton>
