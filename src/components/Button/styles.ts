@@ -13,10 +13,11 @@ export const Container = styled(RectButton) <Props>`
   min-height: 56px;
   justify-content: center;
   align-items: center;
+  border-radius: 12px;
 
   background-color: ${({ theme, type }) => type === 'primary'
     ? theme.COLORS.SUCCESS_900
-    : theme.COLORS.PRIMARY_900
+    : theme.COLORS.PRIMARY_800
   };
 `;
 
