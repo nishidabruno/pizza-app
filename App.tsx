@@ -7,9 +7,8 @@ import { ThemeProvider } from 'styled-components/native';
 
 import theme from '@src/theme';
 
-import { SignIn } from '@screens/SignIn';
-import { Product } from '@screens/Product';
 import { AuthProvider } from '@hooks/auth';
+import { Routes } from '@src/routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -25,7 +24,8 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <AuthProvider>
         <StatusBar style="light" />
-        <Product />
+
+        <Routes />
       </AuthProvider>
     </ThemeProvider>
   );
