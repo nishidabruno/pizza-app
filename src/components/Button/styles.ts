@@ -3,11 +3,12 @@ import { RectButton } from 'react-native-gesture-handler';
 
 export type TypeProps = 'primary' | 'secondary';
 
-type Props = {
+type ContainerProps = {
   type: TypeProps;
+  children: React.ReactNode;
 }
 
-export const Container = styled(RectButton) <Props>`
+export const Container = styled(RectButton) <ContainerProps>`
   flex: 1;
   max-height: 56px;
   min-height: 56px;
