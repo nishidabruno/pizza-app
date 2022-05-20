@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components/native';
+import { TextInput } from 'react-native';
 
 export const Container = styled.View`
   width: 100%;
@@ -28,7 +29,7 @@ export const Label = styled.Text`
   `};
 `;
 
-export const Input = styled.TextInput`
+export const Input = styled(TextInput)`
   flex: 1;
   margin-left: 7px;
 `;

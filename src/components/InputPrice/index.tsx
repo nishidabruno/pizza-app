@@ -3,11 +3,11 @@ import { TextInputProps } from 'react-native';
 
 import { Container, Input, Label, Size } from './styles';
 
-type Props = TextInputProps & {
+type InputPriceProps = TextInputProps & {
   size: string;
 }
 
-export function InputPrice({ size, ...rest }: Props) {
+export function InputPrice({ size, ...rest }: InputPriceProps) {
   return (
     <Container>
       <Size>
