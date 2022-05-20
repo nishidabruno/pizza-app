@@ -35,7 +35,7 @@ static void InitializeFlipper(UIApplication *application) {
 #if defined(FB_SONARKIT_ENABLED) && __has_include(<FlipperKit/FlipperClient.h>)
   InitializeFlipper(application);
 #endif
-  
+
   RCTBridge *bridge = [self.reactDelegate createBridgeWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [self.reactDelegate createRootViewWithBridge:bridge moduleName:@"main" initialProperties:nil];
   rootView.backgroundColor = [UIColor whiteColor];
@@ -56,12 +56,13 @@ static void InitializeFlipper(UIApplication *application) {
   return @[];
 }
 
-- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge {
- #ifdef DEBUG
-  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
- #else
+- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
+{
+#if DEBUG
+  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index"];
+#else
   return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
- #endif
+#endif
 }
 
 // Linking API
