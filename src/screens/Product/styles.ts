@@ -70,7 +70,6 @@ export const Label = styled.Text`
 
 export const InputGroup = styled.View`
   width: 100%;
-  margin-bottom: 16px;
 `;
 
 export const InputGroupHeader = styled.View`
