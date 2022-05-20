@@ -1,12 +1,8 @@
 import styled, { css } from 'styled-components/native';
-import type { AnyStyledComponent } from 'styled-components';
 import { LinearGradient } from 'expo-linear-gradient';
 import { getBottomSpace } from 'react-native-iphone-x-helper';
 
-// Temporary fix (Issue with @types/styled-components-react-native ?)
-const StyledLinearGradient = LinearGradient as unknown as AnyStyledComponent;
-
-export const Container = styled(StyledLinearGradient).attrs(({ theme }) => ({
+export const Container = styled(LinearGradient).attrs(({ theme }) => ({
   colors: theme.COLORS.GRADIENT,
   start: { x: 0, y: 1 },
   end: { x: 0.5, y: 0.5 }
