@@ -20,4 +20,4 @@ npm run ios
 
 ## Usage example
 
-![Gif example](https://github.com/nishidabruno/pizza-app/blob/main/.github/pizza-app-example.gif)
+<img src="https://github.com/nishidabruno/pizza-app/blob/main/.github/pizza-app-example.gif" width="280" height="600"/>
