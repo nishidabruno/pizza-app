@@ -617,7 +617,7 @@ PODS:
   - EXImageLoader (3.2.0):
     - ExpoModulesCore
     - React-Core
-  - Expo (45.0.3):
+  - Expo (45.0.4):
     - ExpoModulesCore
   - ExpoImagePicker (13.1.1):
     - ExpoModulesCore
@@ -1044,20 +1044,20 @@ PODS:
     - React-jsi (= 0.68.1)
     - React-logger (= 0.68.1)
     - React-perflogger (= 0.68.1)
-  - RNCAsyncStorage (1.17.4):
+  - RNCAsyncStorage (1.17.5):
     - React-Core
-  - RNFBApp (14.9.3):
+  - RNFBApp (14.9.4):
     - Firebase/CoreOnly (= 8.15.0)
     - React-Core
-  - RNFBAuth (14.9.3):
+  - RNFBAuth (14.9.4):
     - Firebase/Auth (= 8.15.0)
     - React-Core
     - RNFBApp
-  - RNFBFirestore (14.9.3):
+  - RNFBFirestore (14.9.4):
     - Firebase/Firestore (= 8.15.0)
     - React-Core
     - RNFBApp
-  - RNFBStorage (14.9.3):
+  - RNFBStorage (14.9.4):
     - Firebase/Storage (= 8.15.0)
     - React-Core
     - RNFBApp
@@ -1289,7 +1289,7 @@ SPEC CHECKSUMS:
   EXFileSystem: 2aa2d9289f84bca9532b9ccbd81504fa31eb1ded
   EXFont: 04235cc22e6fef86028feb67db452978dc6f240f
   EXImageLoader: b88e053d760f85a82405b1db2de4abf11978fc9f
-  Expo: 353cd6d2154838c0c8bb1072d3ac89eb535a2ef4
+  Expo: 64d52669fa3b9342919b5b44b2b4f15f19b0cf76
   ExpoImagePicker: d9d6b4f29db437fc7796f13cee5f133f5b4b5f7c
   ExpoKeepAwake: c0c494b442ecd8122974c13b93ccfb57bd408e88
   ExpoLinearGradient: 0debcf7d6cd7fea3050c218544f0db2de9a64f42
@@ -1340,11 +1340,11 @@ SPEC CHECKSUMS:
   React-RCTVibration: 9e344c840176b0af9c84d5019eb4fed8b3c105a1
   React-runtimeexecutor: 7285b499d0339104b2813a1f58ad1ada4adbd6c0
   ReactCommon: bf2888a826ceedf54b99ad1b6182d1bc4a8a3984
-  RNCAsyncStorage: 9367a646dc24e3ab7b6874d79bc1bfd0832dce58
-  RNFBApp: b6276fc67748c7174275cace56776f0228ae58b2
-  RNFBAuth: fce6c25e6416660487ac620eac0343a555bb1812
-  RNFBFirestore: a760c82871d98daf2009a882b38436a446d95f17
-  RNFBStorage: 835a7bf76b55322bdffb4c1edf998823a3b9f2e1
+  RNCAsyncStorage: 81187912cc9a5c2591ddb161e03e587688afb764
+  RNFBApp: bef4ec5a6d31a3da9bf285379d0c4857c6b7313e
+  RNFBAuth: 8694f1f043c75424455726b9b246a9ce12fb5518
+  RNFBFirestore: 841f319bfba0fbf3bd48fae80145301941219dd6
+  RNFBStorage: 13b60bcfa41b195ee2eb9297afb8b2966eaabe83
   RNGestureHandler: 1dc1ea9d4b64f999042afafbaccf5b143f0b2fa2
   RNReanimated: 64573e25e078ae6bec03b891586d50b9ec284393
   RNScreens: 40a2cb40a02a609938137a1e0acfbf8fc9eebf19

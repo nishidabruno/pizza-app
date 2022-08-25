@@ -18,7 +18,7 @@ export function UserTabRoutes() {
   useEffect(() => {
     const subscribe = firestore()
       .collection('orders')
-      .where('status', '==', 'Done')
+      .where('status', '==', 'Pending')
       .onSnapshot(documentSnapshot => {
         setNotifications(String(documentSnapshot.docs.length))
       })
